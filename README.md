@@ -5,9 +5,9 @@ React Native has several libraries that let you get the contents of the clipboar
 
 `react-native-media-clipboard` suports:
 
-- images (including exposing the mime type)
-- multiple strings
-- multiple URLs
+- images
+- strings
+- URLs
 
 ## Getting started
 
