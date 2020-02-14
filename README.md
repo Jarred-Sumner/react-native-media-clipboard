@@ -4,7 +4,7 @@ React Native has several libraries that let you get the contents of the clipboar
 
 `react-native-media-clipboard` suports:
 
-- images (including mime type)
+- images (including exposing the mime type)
 - multiple strings,
 - multiple URLs
 
@@ -84,3 +84,9 @@ const { clipboard, mediaSource } = React.useContext(ClipboardContext);
 ```
 
 There are type definitions for these, so you shouldn't need to refer back to this much.
+
+-
+
+Images are saved in the temporary directory for the app. It does not send `data` URIs across the bridge.
+
+There is a JSI implementation of this as well, however I haven't finished porting it to this library. A contributor is welcome to submit a PR for that :)
