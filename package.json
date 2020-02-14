@@ -1,7 +1,7 @@
 {
   "name": "react-native-media-clipboard",
   "title": "Clipboard for React Native with images",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "TODO",
   "scripts": {
     "prepare": "bob build",

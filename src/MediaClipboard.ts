@@ -91,8 +91,8 @@ export const getClipboardMediaSource = (): Promise<MediaSource | null> => {
     // @ts-ignore
     return global.Clipboard.getMediaSource();
   } else {
-    return new Promise((resolve, reject) =>
-      MediaClipboard.clipboardMediaSource((err, content) => {
+    return new Promise(resolve =>
+      MediaClipboard.clipboardMediaSource((_, content) => {
         resolve(content);
         return;
       })
