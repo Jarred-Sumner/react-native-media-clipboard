@@ -30,7 +30,7 @@ React Native has several libraries that let you get the contents of the clipboar
 }
 ```
 
-<small>This makes sure that the clipboard is in sync if the application went into the background.</small>
+<sup>This makes sure that the clipboard is in sync if the application went into the background.</sup>
 
 ##### Swift bridging header
 
