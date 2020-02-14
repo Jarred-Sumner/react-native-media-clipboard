@@ -1,5 +1,5 @@
 # react-native-media-clipboard
-<a href="https://github.com/Jarred-Sumner/react-native-media-clipboard/blob/master/README.md#installation"><img height=200 src="https://user-images.githubusercontent.com/709451/74530526-1f6afc00-4edf-11ea-8706-f4273b80040e.png" /></a>
+<a href="https://github.com/Jarred-Sumner/react-native-media-clipboard/blob/master/README.md#installation-ios-only"><img height=200 src="https://user-images.githubusercontent.com/709451/74530526-1f6afc00-4edf-11ea-8706-f4273b80040e.png" /></a>
 
 React Native has several libraries that let you get the contents of the clipboard, but none of them support images.
 
