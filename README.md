@@ -69,14 +69,11 @@ const { clipboard, mediaSource } = React.useContext(ClipboardContext);
 
 // Example clipboard:
 {
-  clipboard: {
-    urls: [],
-    strings: [],
-    hasImages: false,
-    hasURLs: false,
-    hasStrings: false
-  },
-  mediaSource: null
+  urls: [],
+  strings: [],
+  hasImages: false,
+  hasURLs: false,
+  hasStrings: false
 };
 
 // You can just pass in the `mediaSource` object to the built-in Image component. As long as the mediaSource object is not null, it should just work.
@@ -85,8 +82,14 @@ const { clipboard, mediaSource } = React.useContext(ClipboardContext);
 
 There are type definitions for these, so you shouldn't need to refer back to this much.
 
--
+---
 
-Images are saved in the temporary directory for the app. It does not send `data` URIs across the bridge.
+This library is iOS only. There is no Android support.
+
+Images are saved in the temporary directory for the app in a background thread. It does not send `data` URIs across the bridge.
 
 There is a JSI implementation of this as well, however I haven't finished porting it to this library. A contributor is welcome to submit a PR for that :)
+
+### Example repo
+
+Example repo: [react-native-media-clipboard-example](https://github.com/Jarred-Sumner/react-native-media-clipboard-example)
