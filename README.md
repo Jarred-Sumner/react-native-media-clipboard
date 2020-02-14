@@ -22,21 +22,21 @@ React Native has several libraries that let you get the contents of the clipboar
 #import <react-native-media-clipboard/MediaClipboard.h>
 ```
 
-##### Swift bridging header
-
-If your project does not contain any Swift code, then you need to create a bridging header.
-
-4. Xcode -> File -> New -> Create an empty .swift file. It will prompt you asking if you want to create a bridging header. Say yes.
-
-If your project already has Swift code (or a bridging header), just ignore this step.
-
-5. [Optional] Add this to your `AppDelegate`:
+4. [Optional] Add this to your `AppDelegate`:
 
 ```objc
 - (void)applicationDidBecomeActive:(UIApplication *)application {
   [MediaClipboard onApplicationBecomeActive];
 }
 ```
+
+##### Swift bridging header
+
+If your project does not contain any Swift code, then you need to create a bridging header – or you'll get a bunch of strange build errors.
+
+5. Xcode -> File -> New -> Create an empty .swift file. It will prompt you asking if you want to create a bridging header. Say yes.
+
+If your project already has Swift code (or a bridging header), just ignore this step.
 
 This makes sure that the clipboard is in sync if the application went into the background.
 
