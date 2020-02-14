@@ -15,14 +15,13 @@ React Native has several libraries that let you get the contents of the clipboar
 ### Installation (iOS only)
 
 1. `cd ios && pod install`
-2. Open your `AppDelegate.m`:
-3. Add the following line near the top of the file:
+2. Add the following line near the top of `AppDelegate.h`:
 
 ```h
 #import <react-native-media-clipboard/MediaClipboard.h>
 ```
 
-4. [Optional] Add this to your `AppDelegate`:
+3. [Optional] Inside the AppDelegate `@implementation` add this:
 
 ```objc
 - (void)applicationDidBecomeActive:(UIApplication *)application {
@@ -36,11 +35,11 @@ React Native has several libraries that let you get the contents of the clipboar
 
 If your project does not contain any Swift code, then you need to create a bridging header – or you'll get a bunch of strange build errors.
 
-5. Xcode -> File -> New -> Create an empty .swift file. It will prompt you asking if you want to create a bridging header. Say yes.
+4. Xcode -> File -> New -> Create an empty .swift file. It will prompt you asking if you want to create a bridging header. Say yes.
 
 If your project already has Swift code (or a bridging header), just ignore this step.
 
-6. Re-build your app: `react-native run-ios`
+5. Re-build your app: `react-native run-ios`
 
 ## Usage
 
