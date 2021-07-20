@@ -57,7 +57,7 @@
   "devDependencies": {
     "@react-native-community/bob": "^0.9.7",
     "react": "^16.9.0",
-    "react-native": "^0.61.5"
+    "react-native": "^0.62.3"
   },
   "dependencies": {
     "lodash": "^4.17.15"
